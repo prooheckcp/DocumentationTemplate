@@ -12,10 +12,21 @@ Get started by **creating a new site**.
 
 Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
 
-### What you'll need
+### Example
 
-- [Node.js](https://nodejs.org/en/download/) version 14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+Some test code
+
+```luau
+local ServerScriptService = game:GetService("ServerScriptService")
+local ProStore3 = require(ServerScriptService.ProStore3)
+
+local a : string = "hello"
+
+ProStore3.PlayerLeft:Connect(function(player : Player, playerData : table)
+    print(player.Name, " left the game.")
+    print("Player data: ", playerData)
+end)
+```
 
 ## Generate a new site
 

@@ -1,8 +1,8 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+
+const darkCodeTheme = require('prism-react-renderer/themes/vsDark');
 
 //Some constants
 const REPO_NAME = "rep"
@@ -10,6 +10,11 @@ const PROFILE_NAME = "proohekcp"
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+  plugins: [
+    require.resolve('docusaurus-lunr-search')
+    //require.resolve("@cmfcmf/docusaurus-search-local")
+  ],
+
   title: 'My Library Name',
   tagline: 'Library description',
   url: 'https://your-docusaurus-test-site.com', //Change to website link
@@ -48,8 +53,16 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      image: "img/Thumbnail.png",
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: false,
+        respectPrefersColorScheme: false,
+      },
+
       navbar: {
         title: 'Home', //Change this to website title
+        hideOnScroll: true,
         logo: {
           alt: 'My Site Logo',
           src: 'img/PageLogo.png', //Path to the logo on the search bar
@@ -65,7 +78,11 @@ const config = {
             href: `https://github.com/${PROFILE_NAME}/${REPO_NAME}`,
             label: 'GitHub',
             position: 'right',
-          }
+          },
+          {
+            type: 'search',
+            position: 'right',
+          },          
         ],
       },
       footer: {
@@ -95,7 +112,8 @@ const config = {
       },
       prism: {
         theme: darkCodeTheme,
-        darkTheme: lightCodeTheme,
+        darkTheme: darkCodeTheme,
+        additionalLanguages: ['powershell', 'lua']
       },
     }),
 };
