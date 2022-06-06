@@ -17,7 +17,7 @@ const config = {
   title: 'My Library Name',
   tagline: 'Library description',
   url: 'https://prooheckcp.github.io', //Change to website link
-  baseUrl: '/',
+  baseUrl: '/DocumentationTemplate/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
