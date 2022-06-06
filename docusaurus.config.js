@@ -106,6 +106,10 @@ const config = {
           {
             label: '🐦Twitter',
             href: 'https://twitter.com/prooheckcp',
+          },
+          {
+            label: '💻GitHub',
+            href: 'https://github.com/prooheckcp',
           }
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Prooheckcp`

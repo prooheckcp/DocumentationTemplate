@@ -4,29 +4,20 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'N/A',
-    imagePath: '/img/prooheckcpChubby.png',
+    title: 'Free and Open Source',
+    imagePath: '/img/ComputerVector.png',
     description: (
       <>
-        N/A
+        The code within this repository is completely free and open to the public. Credit attribution is appreciated but not required.
       </>
     ),
   },
   {
-    title: 'N/A',
+    title: 'Developer: Prooheckcp',
     imagePath: '/img/prooheckcpChubby.png',
     description: (
       <>
-        N/A
-      </>
-    ),
-  },
-  {
-    title: 'N/A',
-    imagePath: '/img/prooheckcpChubby.png',
-    description: (
-      <>
-        N/A
+        This code is being actively maintained by "Prooheckcp". A full-time Portuguese game developer
       </>
     ),
   },
@@ -50,7 +41,7 @@ export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
-        <div className="row">
+        <div className={styles.center}>
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
