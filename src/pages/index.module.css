@@ -16,6 +16,14 @@
   }
 }
 
+.bigText{
+  color:whitesmoke
+}
+
+.smallText {
+  color:whitesmoke
+}
+
 .buttons {
   display: flex;
   align-items: center;
