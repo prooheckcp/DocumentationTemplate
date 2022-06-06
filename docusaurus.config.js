@@ -16,7 +16,7 @@ const config = {
 
   title: 'My Library Name',
   tagline: 'Library description',
-  url: 'https://prooheckcp.github.io/DocumentationTemplate/', //Change to website link
+  url: 'https://prooheckcp.github.io', //Change to website link
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -25,7 +25,7 @@ const config = {
   organizationName: 'proohekcp',
   projectName: 'DocumentationTemplate', // Change to the repo name
   trailingSlash: false,
-  
+
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
