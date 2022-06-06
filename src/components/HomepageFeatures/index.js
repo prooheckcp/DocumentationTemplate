@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Free and Open Source',
-    imagePath: '/img/ComputerVector.png',
+    imagePath: 'https://cdn.discordapp.com/attachments/670023265455964198/983233820792864768/ComputerVector.png',
     description: (
       <>
         The code within this repository is completely free and open to the public. Credit attribution is appreciated but not required.
@@ -14,7 +14,7 @@ const FeatureList = [
   },
   {
     title: 'Developer: Prooheckcp',
-    imagePath: '/img/prooheckcpChubby.png',
+    imagePath: 'https://cdn.discordapp.com/attachments/670023265455964198/983201962826793030/prooheckcpChubby.png',
     description: (
       <>
         This code is being actively maintained by "Prooheckcp". A full-time Portuguese game developer

@@ -30,7 +30,7 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Prooheckcp Page`}
+      title={`Prooheckcp`}
       description="This website was created by god Prooheckcp <head />">
       <HomepageHeader />
       <main>
