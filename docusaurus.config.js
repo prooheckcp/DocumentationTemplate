@@ -5,27 +5,27 @@
 const darkCodeTheme = require('prism-react-renderer/themes/vsDark');
 
 //Some constants
-const REPO_NAME = "rep"
+const REPO_NAME = "DocumentationTemplate"
 const PROFILE_NAME = "proohekcp"
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   plugins: [
     require.resolve('docusaurus-lunr-search')
-    //require.resolve("@cmfcmf/docusaurus-search-local")
   ],
 
   title: 'My Library Name',
   tagline: 'Library description',
-  url: 'https://your-docusaurus-test-site.com', //Change to website link
+  url: 'https://prooheckcp.github.io/DocumentationTemplate/', //Change to website link
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
-  organizationName: PROFILE_NAME,
-  projectName: REPO_NAME, // Change to the repo name
-
+  organizationName: 'proohekcp',
+  projectName: 'DocumentationTemplate', // Change to the repo name
+  trailingSlash: false,
+  
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -40,7 +40,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/prooheckcp/REPO_NAME/tree/main/', //Change REPO_NAME to repository name
+            `https://github.com/${PROFILE_NAME}/${REPO_NAME}/tree/main/`, //Change REPO_NAME to repository name
         },
         blog: false,
         theme: {
