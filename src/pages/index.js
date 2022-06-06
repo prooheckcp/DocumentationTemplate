@@ -5,14 +5,14 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
-import styles from './index.module.css';
+import styles from './index.module.css'
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    <header className={clsx(styles.heroBanner)}>
       <div className="container">
-        <h1 className={styles.smallText}>{siteConfig.title}</h1>
+        <h1 className={styles.bigText}>{siteConfig.title}</h1>
         <p className={styles.smallText}>{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
